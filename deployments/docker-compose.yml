@@ -1,0 +1,25 @@
+services:
+
+  api-gw:
+    image: cyradardev/apigw:1.0.0.alpha-2
+    command: "run"
+    environment:
+      LOG_ADDRESS: ${LOG_ADDRESS:-http://10.3.144.218:880}
+      AUTHEN_ADDRESS: ${AUTHEN_ADDRESS:-iam:80}
+      LICENSE_ADDRESS: ${LICENSE_ADDRESS:-http://10.3.144.218:80}
+      ASSET_ADDRESS: ${ASSET_ADDRESS:-http://10.3.144.218:8080}
+      LOG_COLLECTOR_ADDRESS: ${LOG_COLLECTOR_ADDRESS:-http://10.3.144.218:8882}
+    depends_on:
+      - "iam"
+    restart: "unless-stopped"
+
+  iam:
+    image: cyradardev/iam:1.0.0.alpha-2
+    command: "--env /app/configs/.env serve --addr=0.0.0.0:80"
+    environment:
+      IAM_API_JWT_SECRET: ${IAM_API_JWT_SECRET:-secret}
+      IAM_API_JWT_EXPIRED_TIME: ${IAM_API_JWT_EXPIRED_TIME:-72h}
+      IAM_API_JWT_REFRESHABLE_TIME: ${IAM_API_JWT_REFRESHABLE_TIME:-168h}
+      IAM_API_LICENSE_URL: ${IAM_API_LICENSE_URL:-http://10.3.144.218:80}
+      IAM_API_ASSET_URL: ${IAM_API_ASSET_URL:-http://10.3.144.218:8080}
+    restart: "unless-stopped"

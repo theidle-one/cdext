@@ -1,0 +1,334 @@
+{
+	local_certs
+	order http_cache before reverse_proxy
+	order rate_limit before basicauth
+	log {
+		level INFO
+		output file ./log {
+			roll_size 10MiB
+			roll_keep 20
+		}
+	}
+}
+
+(whitelist) {
+	@whitelist {
+		remote_ip 10.3.145.56
+		remote_ip 10.3.144.218
+		remote_ip 10.3.145.92
+	}
+}
+
+:9988 {
+	import whitelist
+	route {
+		handle @whitelist {
+			handle_path /log/* {
+				reverse_proxy {$LOG_ADDRESS}
+			}
+
+			handle_path /authenticator/* {
+				reverse_proxy {$AUTHEN_ADDRESS}
+			}
+
+			handle_path /license/* {
+				reverse_proxy {$LICENSE_ADDRESS}
+			}
+
+			handle_path /asset/* {
+				reverse_proxy {$ASSET_ADDRESS}
+			}
+
+			handle_path /log-collector/* {
+				reverse_proxy {$LOG_COLLECTOR_ADDRESS}
+			}
+		}
+		error * "Unauthorized" 403
+	}
+}
+
+:9697 {
+	import whitelist
+	encode gzip
+	header Server "CyRadar ESS"
+	header Server "CyRadar EDR"
+	route {
+		# Authoritative middleware
+		authenticator {
+			endpoint {$AUTHEN_ADDRESS}/api/v1/me
+			except /authenticator/api/v1/token
+			except /authenticator/api/v1/refresh
+			except /authenticator/api/v1/me
+			except /ess/api/v1/agent
+			except /ess/api/v1/installer
+			require /
+		}
+		authoritative {
+			except /authenticator/api/v1/token
+			except /authenticator/api/v1/refresh
+			except /authenticator/api/v1/me
+			except /ess/api/v1/agent
+			except /ess/api/v1/installer
+
+			#ASSET_MGT
+
+			#Location
+
+
+			POST /asset/api/v1/settings/locations/* update:location:asset
+			GET /asset/api/v1/settings/locations read:location:asset
+			DELETE /asset/api/v1/settings/locations delete:location:asset
+			POST /asset/api/v1/settings/locations create:location:asset
+			#Departments
+
+
+			POST /asset/api/v1/settings/departments/* update:department:asset
+			GET /asset/api/v1/settings/departments read:department:asset
+			DELETE /asset/api/v1/settings/departments delete:department:asset
+			POST /asset/api/v1/settings/departments create:department:asset
+
+			# CustomField
+			POST /asset/api/v1/settings/custom-fields/* update:customField:asset
+			GET /asset/api/v1/settings/custom-fields read:customField:asset
+
+			DELETE /asset/api/v1/settings/custom-fields delete:customField:asset
+			POST /asset/api/v1/settings/custom-fields create:customField:asset
+
+			#rule
+
+
+			GET /asset/api/v1/rule read:rule:asset
+
+			#group
+			POST /asset/api/v1/group/* update:group:asset
+			GET /asset/api/v1/group read:group:asset
+
+			DELETE /asset/api/v1/group delete:group:asset
+			POST /asset/api/v1/group create:group:asset
+
+			#employeeModels
+			POST /asset/api/v1/settings/employee-models/* update:employeeModels:asset
+			GET /asset/api/v1/settings/employee-models read:employeeModels:asset
+
+			DELETE /asset/api/v1/settings/employee-models delete:employeeModels:asset
+			POST /asset/api/v1/settings/employee-models create:employeeModels:asset
+
+			#appModels
+			POST /asset/api/v1/settings/app-models/* update:appModels:asset
+			GET /asset/api/v1/settings/app-models read:appModels:asset
+
+			DELETE /asset/api/v1/settings/app-models delete:appModels:asset
+			POST /asset/api/v1/settings/app-models create:appModels:asset
+
+			#deviceModels
+			POST /asset/api/v1/settings/device-models/* update:deviceModels:asset
+			GET /asset/api/v1/settings/device-models read:deviceModels:asset
+
+			DELETE /asset/api/v1/settings/device-models delete:deviceModels:asset
+			POST /asset/api/v1/settings/device-models create:deviceModels:asset
+
+			#customFieldset
+			POST /asset/api/v1/settings/custom-fieldset/* update:customFieldset:asset
+			GET /asset/api/v1/settings/custom-fieldset read:customFieldset:asset
+
+			DELETE /asset/api/v1/settings/custom-fieldset delete:customFieldset:asset
+			POST /asset/api/v1/settings/custom-fieldset create:customFieldset:asset
+
+			#devices
+			POST /asset/api/v1/settings/devices/* update:devices:asset
+			GET /asset/api/v1/settings/devices read:devices:asset
+
+			DELETE /asset/api/v1/settings/devices delete:devices:asset
+			POST /asset/api/v1/settings/devices create:devices:asset
+
+			#devicesApp
+			POST /asset/api/v1/settings/device-app/* update:deviceApp:asset
+			GET /asset/api/v1/settings/device-app read:deviceApp:asset
+
+			DELETE /asset/api/v1/settings/device-app delete:deviceApp:asset
+			POST /asset/api/v1/settings/device-app create:deviceApp:asset
+
+			#employee
+
+
+			POST /asset/api/v1/settings/employees/* update:employee:asset
+			GET /asset/api/v1/settings/employees read:employee:asset
+
+			DELETE /asset/api/v1/settings/employees delete:employee:asset
+			POST /asset/api/v1/settings/employees create:employee:asset
+
+			#app
+
+
+			GET /asset/api/v1/settings/app read:app:asset
+			DELETE /asset/api/v1/settings/app delete:app:asset
+			POST /asset/api/v1/settings/app create:app:asset
+
+			#ESS
+
+
+			#agent
+
+
+			POST /ess/api/v1/agent create:agent:ess
+			GET /ess/api/v1/agent read:agent:ess
+			GET /ess/api/v1/download/agent read:agent:es
+
+			#database
+
+
+			GET /ess/api/v1/database/ read:database:ess
+			GET /ess/api/v1/download/database read:database:ess
+
+			#sample
+
+
+			POST /ess/api/v1/sample create:sample:ess
+			GET /ess/api/v1/sample read:sample:ess
+			GET /ess/api/v1/download/sample read:sample:ess
+
+			#lookup
+
+
+			POST /ess/api/v1/lookup/ create:lookup:ess
+			GET /ess/api/v1/lookup/ read:lookup:ess
+
+			#LICENSE_MGT
+
+
+			POST /license/api/v1/licenses/* update:licenses:license
+			GET /license/api/v1/licenses read:licenses:license
+
+			POST /license/api/v1/licenses create:licenses:license
+			DELETE /license/api/v1/licenses delete:licenses:license
+
+			#products
+			POST /license/api/v1/products/* update:products:license
+			GET /license/api/v1/products read:products:license
+
+			POST /license/api/v1/products create:products:license
+			DELETE /license/api/v1/products delete:products:license
+
+			#productPlans
+			POST /license/api/v1/product-plans/* update:productPlans:license
+			GET /license/api/v1/product-plans read:productPlans:license
+
+			POST /license/api/v1/product-plans create:productPlans:license
+			DELETE /license/api/v1/product-plans delete:productPlans:license
+
+			#LOG_COLLECTOR
+
+
+			POST /log-collector/event-log create:log:log-collector
+			POST /log-collector/event-logs create:log:log-collector
+
+			#LOG_MGT
+
+
+			#index
+
+
+			GET /log/api/v1/indices read:index:log
+			POST /log/api/v1/indices create:index:log
+			DELETE /log/api/v1/indices delete:index:log
+
+			#dashboard
+
+
+			GET /log/api/v1/dashboards read:dashboard:log
+			POST /log/api/v1/dashboards create:dashboard:log
+			DELETE /log/api/v1/dashboards delete:dashboard:log
+			PATCH /log/api/v1/dashboards update:dashboard:log
+
+			#widgets
+
+
+			GET /log/api/v1/widgets/ read:widget:log
+			POST /log/api/v1/widgets create:widget:log
+
+			#snapshot
+
+
+			GET /log/api/v1/snapshots/ read:snapshot:log
+			POST /log/api/v1/snapshots create:snapshot:log
+			DELETE /log/api/v1/snapshots delete:snapshot:log
+
+			#search
+
+
+			GET /log/api/v1/mapping read:search:log
+			POST /log/api/v1/search read:search:log
+		}
+
+		handle_path /ess/* {
+			reverse_proxy {$ESS_ADDRESS}
+		}
+
+		handle_path /log/* {
+			reverse_proxy {$LOG_ADDRESS}
+		}
+
+		handle_path /authenticator/* {
+			reverse_proxy {$AUTHEN_ADDRESS}
+		}
+
+		handle_path /license/* {
+			reverse_proxy {$LICENSE_ADDRESS}
+		}
+
+		handle_path /asset/* {
+			reverse_proxy {$ASSET_ADDRESS}
+		}
+
+		handle_path /log-collector/* {
+			reverse_proxy {$LOG_COLLECTOR_ADDRESS}
+		}
+	}
+}
+
+log.collector.cyradar.com {
+	rewrite * /log-collector{path}
+	reverse_proxy /log-collector/* http://localhost:9697
+}
+
+log.edr.cyradar.com {
+	uri /api/* replace /api /log/api
+	reverse_proxy /log/api/* http://localhost:9697
+	reverse_proxy {$LOG_ADDRESS}
+}
+
+authenticator.cyradar.com {
+	rewrite * /authenticator{path}
+	reverse_proxy /authenticator/* http://localhost:9697
+}
+
+license.edr.cyradar.com {
+	uri /api/* replace /api /license/api
+	reverse_proxy /license/api/* http://localhost:9697
+	reverse_proxy {$LICENSE_ADDRESS}
+}
+
+ess.edr.cyradar.com {
+	import whitelist
+
+	uri /api/* replace /api /ess/api
+
+	@post {
+		method POST
+		path /ess/api/v1/installer/*
+	}
+
+	handle @post {
+	    route {
+			reverse_proxy @whitelist http://localhost:9697
+			error * "Unauthorized" 403
+			}
+	}
+	reverse_proxy /ess/api/* http://localhost:9697
+}
+
+asset.edr.cyradar.com {
+	uri /api/* replace /api /asset/api
+	reverse_proxy /asset/api/* http://localhost:9697
+	reverse_proxy {$ASSET_ADDRESS}
+}

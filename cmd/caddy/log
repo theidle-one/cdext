@@ -1,0 +1,578 @@
+2022/05/04 07:28:36.901	info	admin	admin endpoint started	{"address": "tcp/localhost:2019", "enforce_origin": false, "origins": ["//[::1]:2019", "//127.0.0.1:2019", "//localhost:2019"]}
+2022/05/04 07:28:36.901	info	tls.cache.maintenance	started background certificate maintenance	{"cache": "0xc0004fca80"}
+2022/05/04 07:28:36.903	info	http	server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS	{"server_name": "srv0", "https_port": 443}
+2022/05/04 07:28:36.903	info	http	enabling automatic HTTP->HTTPS redirects	{"server_name": "srv0"}
+2022/05/04 07:28:37.113	info	pki.ca.local	root certificate is already trusted by system	{"path": "storage:pki/authorities/local/root.crt"}
+2022/05/04 07:28:37.114	info	tls	cleaning storage unit	{"description": "FileStorage:/Users/minhduong/Library/Application Support/Caddy"}
+2022/05/04 07:28:37.115	info	http	enabling automatic TLS certificate management	{"domains": ["log.collector.cyradar.com", "license.edr.cyradar.com", "asset.edr.cyradar.com", "log.edr.cyradar.com", "authen.cyradar.com"]}
+2022/05/04 07:28:37.116	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/04 07:28:37.117	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/04 07:28:37.118	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/04 07:28:37.118	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/04 07:28:37.119	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/04 07:28:37.119	info	tls	finished cleaning storage units
+2022/05/04 07:28:37.120	info	autosaved config (load with --resume flag)	{"file": "/Users/minhduong/Library/Application Support/Caddy/autosave.json"}
+2022/05/04 07:28:37.120	info	serving initial configuration
+2022/05/04 07:28:43.312	info	shutting down	{"signal": "SIGINT"}
+2022/05/04 07:28:43.314	warn	exiting; byeee!! 👋	{"signal": "SIGINT"}
+2022/05/04 07:28:43.321	info	tls.cache.maintenance	stopped background certificate maintenance	{"cache": "0xc0004fca80"}
+2022/05/04 07:28:43.323	info	admin	stopped previous server	{"address": "tcp/localhost:2019"}
+2022/05/04 07:28:43.323	info	shutdown complete	{"signal": "SIGINT", "exit_code": 0}
+2022/05/04 07:31:05.380	info	admin	admin endpoint started	{"address": "tcp/localhost:2019", "enforce_origin": false, "origins": ["//127.0.0.1:2019", "//localhost:2019", "//[::1]:2019"]}
+2022/05/04 07:31:05.381	info	tls.cache.maintenance	started background certificate maintenance	{"cache": "0xc0002708c0"}
+2022/05/04 07:31:05.382	info	http	server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS	{"server_name": "srv0", "https_port": 443}
+2022/05/04 07:31:05.382	info	http	enabling automatic HTTP->HTTPS redirects	{"server_name": "srv0"}
+2022/05/04 07:31:05.589	info	pki.ca.local	root certificate is already trusted by system	{"path": "storage:pki/authorities/local/root.crt"}
+2022/05/04 07:31:05.590	info	tls	cleaning storage unit	{"description": "FileStorage:/Users/minhduong/Library/Application Support/Caddy"}
+2022/05/04 07:31:05.591	info	http	enabling automatic TLS certificate management	{"domains": ["authen.cyradar.com", "log.collector.cyradar.com", "license.edr.cyradar.com", "asset.edr.cyradar.com", "log.edr.cyradar.com"]}
+2022/05/04 07:31:05.592	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/04 07:31:05.593	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/04 07:31:05.593	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/04 07:31:05.594	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/04 07:31:05.594	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/04 07:31:05.594	info	tls	finished cleaning storage units
+2022/05/04 07:31:05.596	info	autosaved config (load with --resume flag)	{"file": "/Users/minhduong/Library/Application Support/Caddy/autosave.json"}
+2022/05/04 07:31:05.596	info	serving initial configuration
+2022/05/04 07:32:29.966	info	shutting down	{"signal": "SIGINT"}
+2022/05/04 07:32:29.968	warn	exiting; byeee!! 👋	{"signal": "SIGINT"}
+2022/05/04 07:32:29.975	info	tls.cache.maintenance	stopped background certificate maintenance	{"cache": "0xc0002708c0"}
+2022/05/04 07:32:29.977	info	admin	stopped previous server	{"address": "tcp/localhost:2019"}
+2022/05/04 07:32:29.978	info	shutdown complete	{"signal": "SIGINT", "exit_code": 0}
+2022/05/04 08:14:53.861	info	admin	admin endpoint started	{"address": "tcp/localhost:2019", "enforce_origin": false, "origins": ["//localhost:2019", "//[::1]:2019", "//127.0.0.1:2019"]}
+2022/05/04 08:14:53.863	info	tls.cache.maintenance	started background certificate maintenance	{"cache": "0xc00048c000"}
+2022/05/04 08:14:53.864	info	http	server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS	{"server_name": "srv0", "https_port": 443}
+2022/05/04 08:14:53.864	info	http	enabling automatic HTTP->HTTPS redirects	{"server_name": "srv0"}
+2022/05/04 08:14:54.092	info	pki.ca.local	root certificate is already trusted by system	{"path": "storage:pki/authorities/local/root.crt"}
+2022/05/04 08:14:54.093	info	tls	cleaning storage unit	{"description": "FileStorage:/Users/minhduong/Library/Application Support/Caddy"}
+2022/05/04 08:14:54.094	info	http	enabling automatic TLS certificate management	{"domains": ["asset.edr.cyradar.com", "log.edr.cyradar.com", "authen.cyradar.com", "log.collector.cyradar.com", "license.edr.cyradar.com"]}
+2022/05/04 08:14:54.095	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/04 08:14:54.096	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/04 08:14:54.097	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/04 08:14:54.097	info	tls	finished cleaning storage units
+2022/05/04 08:14:54.097	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/04 08:14:54.098	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/04 08:14:54.099	info	autosaved config (load with --resume flag)	{"file": "/Users/minhduong/Library/Application Support/Caddy/autosave.json"}
+2022/05/04 08:14:54.099	info	serving initial configuration
+2022/05/04 13:29:56.275	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 8508.724598}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 8508.719849}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 8508.71982}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 8508.719791}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 8508.719781}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 8508.719405}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 8508.719359}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 8508.719384}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 8508.719022}
+2022/05/04 13:29:56.280	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 8508.719046}
+2022/05/04 13:29:56.285	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/04 13:29:56.285	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/04 13:29:56.285	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/04 13:29:56.286	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/04 13:29:56.286	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/04 13:29:56.308	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/04 13:29:56.314	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": 8508.685243}
+2022/05/04 13:29:56.328	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/04 13:29:56.346	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/04 13:29:56.347	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/04 13:29:56.348	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": 8508.651805}
+2022/05/04 13:29:56.348	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": 8508.651458}
+2022/05/04 13:29:56.346	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/04 13:29:56.350	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": 8508.649393}
+2022/05/04 13:29:56.352	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": 8508.647663}
+2022/05/04 13:29:56.361	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/04 13:29:56.361	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/04 13:29:56.361	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/04 13:29:56.361	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/04 13:29:56.361	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/04 13:29:56.362	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/04 13:29:56.362	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/04 13:29:56.362	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/05 01:29:56.000"}
+2022/05/04 13:29:56.362	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/04 13:29:56.362	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/04 13:29:56.362	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/05 01:29:56.000"}
+2022/05/04 13:29:56.363	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/05 01:29:56.000"}
+2022/05/04 13:29:56.363	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/05 01:29:56.000"}
+2022/05/04 13:29:56.366	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/04 13:29:56.366	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/04 13:29:56.368	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/04 13:29:56.369	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/04 13:29:56.369	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/05 01:29:56.000"}
+2022/05/05 02:20:21.376	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -3025.375888}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -3025.380344}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -3025.380422}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -3025.380441}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -3025.380492}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -3025.380877}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -3025.380857}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -3025.380857}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -3025.380941}
+2022/05/05 02:20:21.380	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -3025.380905}
+2022/05/05 02:20:21.384	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 02:20:21.384	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 02:20:21.384	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 02:20:21.384	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 02:20:21.384	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/05 02:20:21.407	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/05 02:20:21.409	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": -3025.409822}
+2022/05/05 02:20:21.427	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 02:20:21.445	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 02:20:21.445	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 02:20:21.445	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 02:20:21.445	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": -3025.445831}
+2022/05/05 02:20:21.449	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": -3025.449336}
+2022/05/05 02:20:21.449	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": -3025.449717}
+2022/05/05 02:20:21.450	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": -3025.450054}
+2022/05/05 02:20:21.450	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 02:20:21.450	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 02:20:21.450	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/05 02:20:21.450	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/05 02:20:21.451	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/05 02:20:21.451	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 02:20:21.451	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 02:20:21.451	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 02:20:21.451	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 02:20:21.451	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/05 02:20:21.452	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/05 02:20:21.452	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/05 02:20:21.452	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/05 02:20:21.452	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/05 02:20:21.452	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/05 02:20:21.452	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/05 02:20:21.452	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/05 14:20:21.000"}
+2022/05/05 02:20:21.452	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/05 14:20:21.000"}
+2022/05/05 02:20:21.452	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/05 14:20:21.000"}
+2022/05/05 02:20:21.452	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/05 14:20:21.000"}
+2022/05/05 02:20:21.453	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 02:20:21.453	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 02:20:21.453	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/05 02:20:21.453	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/05 02:20:21.453	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/05 14:20:21.000"}
+2022/05/05 07:26:02.294	info	not implemented	{"signal": "SIGHUP"}
+2022/05/05 14:48:30.541	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -1689.541095}
+2022/05/05 14:48:30.545	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -1689.54511}
+2022/05/05 14:48:30.545	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -1689.545131}
+2022/05/05 14:48:30.545	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -1689.545475}
+2022/05/05 14:48:30.546	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -1689.546984}
+2022/05/05 14:48:30.545	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -1689.545475}
+2022/05/05 14:48:30.547	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -1689.547091}
+2022/05/05 14:48:30.548	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -1689.548219}
+2022/05/05 14:48:30.548	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 14:48:30.548	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 14:48:30.548	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -1689.548248}
+2022/05/05 14:48:30.548	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -1689.5489}
+2022/05/05 14:48:30.549	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 14:48:30.549	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 14:48:30.550	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/05 14:48:30.569	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/05 14:48:30.569	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 14:48:30.571	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": -1689.571691}
+2022/05/05 14:48:30.571	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": -1689.571692}
+2022/05/05 14:48:30.588	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 14:48:30.588	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 14:48:30.607	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 14:48:30.607	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/05 14:48:30.607	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 14:48:30.607	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": -1689.607885}
+2022/05/05 14:48:30.607	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/05 14:48:30.610	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/05 14:48:30.610	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": -1689.610825}
+2022/05/05 14:48:30.610	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/05 14:48:30.611	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/05 14:48:30.612	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/05 14:48:30.612	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/06 02:48:30.000"}
+2022/05/05 14:48:30.612	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 14:48:30.613	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/05 14:48:30.613	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/05 14:48:30.614	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": -1689.614699}
+2022/05/05 14:48:30.614	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/05 14:48:30.614	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/06 02:48:30.000"}
+2022/05/05 14:48:30.614	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/05 14:48:30.614	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/06 02:48:30.000"}
+2022/05/05 14:48:30.617	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 14:48:30.617	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/05 14:48:30.617	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 14:48:30.617	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/05 14:48:30.617	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/05 14:48:30.618	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/05 14:48:30.618	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/05 14:48:30.618	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/06 02:48:30.000"}
+2022/05/05 14:48:30.618	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/05 14:48:30.618	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/06 02:48:30.000"}
+2022/05/06 02:37:31.528	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 658.471451}
+2022/05/06 02:37:31.536	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 658.463888}
+2022/05/06 02:37:31.536	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 658.463846}
+2022/05/06 02:37:31.536	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 658.463803}
+2022/05/06 02:37:31.536	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 658.463784}
+2022/05/06 02:37:31.536	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 658.463727}
+2022/05/06 02:37:31.538	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 658.461648}
+2022/05/06 02:37:31.540	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 658.459777}
+2022/05/06 02:37:31.539	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 658.460164}
+2022/05/06 02:37:31.546	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 02:37:31.546	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 02:37:31.546	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 02:37:31.546	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/06 02:37:31.541	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 658.45889}
+2022/05/06 02:37:31.547	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 02:37:31.568	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 02:37:31.568	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 02:37:31.582	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 02:37:31.588	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": 658.411935}
+2022/05/06 02:37:31.600	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 02:37:31.604	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": 658.395379}
+2022/05/06 02:37:31.612	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/06 02:37:31.612	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": 658.387036}
+2022/05/06 02:37:31.613	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": 658.386774}
+2022/05/06 02:37:31.613	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": 658.386128}
+2022/05/06 02:37:31.640	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/06 02:37:31.640	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/06 02:37:31.640	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/06 02:37:31.640	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/06 02:37:31.640	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/06 02:37:31.640	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/06 02:37:31.641	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/06 02:37:31.641	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/06 02:37:31.641	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/06 14:37:31.000"}
+2022/05/06 02:37:31.641	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/06 02:37:31.641	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/06 02:37:31.641	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/06 14:37:31.000"}
+2022/05/06 02:37:31.641	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/06 02:37:31.641	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/06 14:37:31.000"}
+2022/05/06 02:37:31.642	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/06 14:37:31.000"}
+2022/05/06 02:37:31.649	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/06 14:37:31.000"}
+2022/05/06 11:39:59.383	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 10651.616692}
+2022/05/06 11:39:59.399	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 10651.600851}
+2022/05/06 11:39:59.399	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 10651.600761}
+2022/05/06 11:39:59.402	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 10651.59743}
+2022/05/06 11:39:59.402	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 10651.597408}
+2022/05/06 11:39:59.402	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 10651.597385}
+2022/05/06 11:39:59.404	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 10651.595119}
+2022/05/06 11:39:59.399	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 10651.600732}
+2022/05/06 11:39:59.402	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 10651.5974}
+2022/05/06 11:39:59.407	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 10651.592654}
+2022/05/06 11:39:59.426	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 11:39:59.426	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 11:39:59.426	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 11:39:59.428	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/06 11:39:59.428	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 11:39:59.467	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 11:39:59.469	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": 10651.530587}
+2022/05/06 11:39:59.486	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 11:39:59.486	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 11:39:59.488	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": 10651.511257}
+2022/05/06 11:39:59.505	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 11:39:59.489	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": 10651.51048}
+2022/05/06 11:39:59.513	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/06 11:39:59.517	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": 10651.482906}
+2022/05/06 11:39:59.521	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": 10651.478247}
+2022/05/06 11:39:59.531	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 11:39:59.531	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/06 11:39:59.531	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 11:39:59.531	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/06 11:39:59.531	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/06 11:39:59.531	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/06 11:39:59.531	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/06 11:39:59.531	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/06 11:39:59.531	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/06 11:39:59.532	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 11:39:59.532	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/06 11:39:59.532	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/06 11:39:59.532	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 11:39:59.532	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/06 11:39:59.532	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/06 11:39:59.532	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/06 11:39:59.532	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/06 11:39:59.532	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/06 11:39:59.532	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/06 23:39:59.000"}
+2022/05/06 11:39:59.532	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/06 23:39:59.000"}
+2022/05/06 11:39:59.532	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/06 23:39:59.000"}
+2022/05/06 11:39:59.532	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/06 11:39:59.532	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/06 23:39:59.000"}
+2022/05/06 11:39:59.533	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/06 11:39:59.533	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/06 23:39:59.000"}
+2022/05/07 02:15:20.202	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -9321.201666}
+2022/05/07 02:15:20.205	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -9321.205754}
+2022/05/07 02:15:20.205	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -9321.205798}
+2022/05/07 02:15:20.205	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -9321.205812}
+2022/05/07 02:15:20.205	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -9321.205837}
+2022/05/07 02:15:20.206	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -9321.206072}
+2022/05/07 02:15:20.206	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -9321.206052}
+2022/05/07 02:15:20.205	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -9321.205929}
+2022/05/07 02:15:20.206	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -9321.206015}
+2022/05/07 02:15:20.205	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -9321.205929}
+2022/05/07 02:15:20.211	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 02:15:20.211	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 02:15:20.211	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 02:15:20.212	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 02:15:20.213	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/07 02:15:20.238	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 02:15:20.241	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": -9321.241052}
+2022/05/07 02:15:20.243	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 02:15:20.243	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 02:15:20.244	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 02:15:20.247	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": -9321.247444}
+2022/05/07 02:15:20.248	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": -9321.248293}
+2022/05/07 02:15:20.251	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/07 02:15:20.248	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": -9321.248539}
+2022/05/07 02:15:20.252	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": -9321.252276}
+2022/05/07 02:15:20.283	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 02:15:20.283	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 02:15:20.284	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 02:15:20.284	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 02:15:20.284	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/07 02:15:20.285	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/07 02:15:20.286	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 02:15:20.286	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 02:15:20.286	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/07 02:15:20.286	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/07 02:15:20.286	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/07 02:15:20.286	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/07 02:15:20.287	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/07 02:15:20.287	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/07 02:15:20.287	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/07 14:15:20.000"}
+2022/05/07 02:15:20.287	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/07 02:15:20.287	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/07 14:15:20.000"}
+2022/05/07 02:15:20.287	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 02:15:20.287	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 02:15:20.287	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/07 14:15:20.000"}
+2022/05/07 02:15:20.287	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/07 02:15:20.287	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/07 14:15:20.000"}
+2022/05/07 02:15:20.287	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/07 02:15:20.287	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/07 02:15:20.287	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/07 14:15:20.000"}
+2022/05/07 12:14:19.613	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 7260.386976}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 7260.383375}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 7260.383341}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 7260.383243}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 7260.383186}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": 7260.383241}
+2022/05/07 12:14:19.617	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": 7260.383006}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": 7260.38305}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": 7260.383071}
+2022/05/07 12:14:19.616	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": 7260.383198}
+2022/05/07 12:14:19.619	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/07 12:14:19.619	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 12:14:19.620	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 12:14:19.620	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 12:14:19.620	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 12:14:19.641	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 12:14:19.658	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 12:14:19.658	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 12:14:19.658	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 12:14:19.663	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": 7260.336179}
+2022/05/07 12:14:19.664	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": 7260.335818}
+2022/05/07 12:14:19.663	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/07 12:14:19.665	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": 7260.334897}
+2022/05/07 12:14:19.666	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": 7260.333605}
+2022/05/07 12:14:19.667	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": 7260.332971}
+2022/05/07 12:14:19.689	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 12:14:19.689	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 12:14:19.689	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 12:14:19.689	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/07 12:14:19.689	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/07 12:14:19.689	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/07 12:14:19.690	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/07 12:14:19.690	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/07 12:14:19.690	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/07 12:14:19.690	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/07 12:14:19.690	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/08 00:14:19.000"}
+2022/05/07 12:14:19.690	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/07 12:14:19.690	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/08 00:14:19.000"}
+2022/05/07 12:14:19.690	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/07 12:14:19.691	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/08 00:14:19.000"}
+2022/05/07 12:14:19.691	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 12:14:19.691	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/07 12:14:19.691	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/07 12:14:19.691	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/07 12:14:19.691	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/07 12:14:19.691	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/07 12:14:19.692	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/07 12:14:19.692	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/08 00:14:19.000"}
+2022/05/07 12:14:19.692	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/07 12:14:19.692	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/08 00:14:19.000"}
+2022/05/08 14:15:04.987	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -50445.986275}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -50445.990342}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -50445.990383}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -50445.99041}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -50445.990419}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -50445.990905}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -50445.990872}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -50445.990858}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -50445.990887}
+2022/05/08 14:15:04.990	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -50445.990866}
+2022/05/08 14:15:04.992	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/08 14:15:04.992	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/08 14:15:04.992	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/08 14:15:04.993	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/08 14:15:04.993	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/08 14:15:05.000	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/08 14:15:05.000	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/08 14:15:05.010	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": -50446.010609}
+2022/05/08 14:15:05.010	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": -50446.010608}
+2022/05/08 14:15:05.019	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/08 14:15:05.019	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/08 14:15:05.040	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/08 14:15:05.041	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": -50446.041447}
+2022/05/08 14:15:05.041	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": -50446.041499}
+2022/05/08 14:15:05.041	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": -50446.041676}
+2022/05/08 14:15:05.054	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/08 14:15:05.054	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/08 14:15:05.054	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/08 14:15:05.054	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/08 14:15:05.054	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/08 14:15:05.054	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/08 14:15:05.054	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/08 14:15:05.055	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/08 14:15:05.055	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/08 14:15:05.055	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/08 14:15:05.055	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/08 14:15:05.054	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/08 14:15:05.055	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/08 14:15:05.055	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/08 14:15:05.055	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/08 14:15:05.056	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/08 14:15:05.056	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/08 14:15:05.056	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/09 02:15:05.000"}
+2022/05/08 14:15:05.056	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/09 02:15:05.000"}
+2022/05/08 14:15:05.056	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/08 14:15:05.056	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/09 02:15:05.000"}
+2022/05/08 14:15:05.056	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/08 14:15:05.056	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/09 02:15:05.000"}
+2022/05/08 14:15:05.056	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/08 14:15:05.056	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/09 02:15:05.000"}
+2022/05/09 02:24:08.053	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -543.053126}
+2022/05/09 02:24:08.063	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -543.06397}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -543.06425}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -543.064314}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	certificate expires soon; queuing for renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -543.064334}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.edr.cyradar.com"], "remaining": -543.064361}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["log.collector.cyradar.com"], "remaining": -543.064137}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["authen.cyradar.com"], "remaining": -543.06459}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["asset.edr.cyradar.com"], "remaining": -543.064606}
+2022/05/09 02:24:08.064	info	tls.cache.maintenance	attempting certificate renewal	{"identifiers": ["license.edr.cyradar.com"], "remaining": -543.064547}
+2022/05/09 02:24:08.066	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/09 02:24:08.066	info	tls.renew	acquiring lock	{"identifier": "authen.cyradar.com"}
+2022/05/09 02:24:08.067	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/09 02:24:08.067	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/09 02:24:08.066	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/09 02:24:08.099	info	tls.renew	lock acquired	{"identifier": "authen.cyradar.com"}
+2022/05/09 02:24:08.119	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/09 02:24:08.100	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/09 02:24:08.119	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/09 02:24:08.119	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/09 02:24:08.121	info	tls.renew	renewing certificate	{"identifier": "authen.cyradar.com", "remaining": -543.121302}
+2022/05/09 02:24:08.121	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": -543.121359}
+2022/05/09 02:24:08.121	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": -543.121623}
+2022/05/09 02:24:08.121	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": -543.121905}
+2022/05/09 02:24:08.122	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": -543.122494}
+2022/05/09 02:24:08.139	info	tls.renew	certificate renewed successfully	{"identifier": "authen.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	releasing lock	{"identifier": "authen.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/09 02:24:08.140	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/09 02:24:08.140	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/09 02:24:08.140	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/09 02:24:08.140	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/09 02:24:08.140	info	tls	reloading managed certificate	{"identifiers": ["authen.cyradar.com"]}
+2022/05/09 02:24:08.141	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/09 02:24:08.141	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/09 02:24:08.141	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/09 02:24:08.141	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/09 14:24:08.000"}
+2022/05/09 02:24:08.141	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/09 14:24:08.000"}
+2022/05/09 02:24:08.141	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authen.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authen.cyradar.com"]}
+2022/05/09 02:24:08.141	info	tls.cache	replaced certificate in cache	{"subjects": ["authen.cyradar.com"], "new_expiration": "2022/05/09 14:24:08.000"}
+2022/05/09 02:24:08.141	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/09 14:24:08.000"}
+2022/05/09 02:24:08.141	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/09 02:24:08.141	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/09 14:24:08.000"}
+2022/05/11 04:50:52.869	info	tls.cache.maintenance	started background certificate maintenance	{"cache": "0xc000274000"}
+2022/05/11 04:50:52.871	info	http	server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS	{"server_name": "srv0", "https_port": 443}
+2022/05/11 04:50:52.871	info	http	enabling automatic HTTP->HTTPS redirects	{"server_name": "srv0"}
+2022/05/11 04:50:52.876	info	tls.cache.maintenance	stopped background certificate maintenance	{"cache": "0xc000274000"}
+2022/05/12 02:51:13.228	info	tls.cache.maintenance	started background certificate maintenance	{"cache": "0xc000296000"}
+2022/05/12 02:51:13.229	info	http	server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS	{"server_name": "srv0", "https_port": 443}
+2022/05/12 02:51:13.229	info	http	enabling automatic HTTP->HTTPS redirects	{"server_name": "srv0"}
+2022/05/12 02:51:13.233	info	tls.cache.maintenance	stopped background certificate maintenance	{"cache": "0xc000296000"}
+2022/05/12 03:16:28.114	info	admin	admin endpoint started	{"address": "tcp/localhost:2019", "enforce_origin": false, "origins": ["//localhost:2019", "//[::1]:2019", "//127.0.0.1:2019"]}
+2022/05/12 03:16:28.115	info	tls.cache.maintenance	started background certificate maintenance	{"cache": "0xc00011a000"}
+2022/05/12 03:16:28.116	info	http	server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS	{"server_name": "srv0", "https_port": 443}
+2022/05/12 03:16:28.116	info	http	enabling automatic HTTP->HTTPS redirects	{"server_name": "srv0"}
+2022/05/12 03:16:28.122	info	tls	cleaning storage unit	{"description": "FileStorage:/Users/minhduong/Library/Application Support/Caddy"}
+2022/05/12 03:16:28.123	info	http	enabling automatic TLS certificate management	{"domains": ["license.edr.cyradar.com", "asset.edr.cyradar.com", "log.edr.cyradar.com", "ess.edr.cyradar.com", "log.collector.cyradar.com", "authenticator.cyradar.com"]}
+2022/05/12 03:16:28.124	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/12 03:16:28.125	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/12 03:16:28.125	info	tls.renew	acquiring lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/12 03:16:28.125	info	tls.renew	acquiring lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/12 03:16:28.126	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/12 03:16:28.126	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/12 03:16:28.147	info	tls.renew	lock acquired	{"identifier": "license.edr.cyradar.com"}
+2022/05/12 03:16:28.147	info	tls.renew	acquiring lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/12 03:16:28.148	info	tls.renew	acquiring lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/12 03:16:28.149	info	tls.renew	renewing certificate	{"identifier": "license.edr.cyradar.com", "remaining": -219140.149833}
+2022/05/12 03:16:28.165	info	tls.obtain	acquiring lock	{"identifier": "ess.edr.cyradar.com"}
+2022/05/12 03:16:28.165	info	tls.renew	lock acquired	{"identifier": "asset.edr.cyradar.com"}
+2022/05/12 03:16:28.166	warn	tls.issuance.internal	cert lifetime would exceed issuer NotAfter, clamping lifetime	{"orig_lifetime": 43200, "lifetime": -84283.166074, "not_after": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.167	info	tls.renew	renewing certificate	{"identifier": "asset.edr.cyradar.com", "remaining": -219140.167647}
+2022/05/12 03:16:28.184	info	tls.obtain	acquiring lock	{"identifier": "authenticator.cyradar.com"}
+2022/05/12 03:16:28.183	info	tls.renew	lock acquired	{"identifier": "log.edr.cyradar.com"}
+2022/05/12 03:16:28.186	warn	tls.issuance.internal	cert lifetime would exceed issuer NotAfter, clamping lifetime	{"orig_lifetime": 43200, "lifetime": -84283.186994, "not_after": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.203	info	tls.renew	lock acquired	{"identifier": "log.collector.cyradar.com"}
+2022/05/12 03:16:28.204	info	tls.renew	renewing certificate	{"identifier": "log.edr.cyradar.com", "remaining": -219140.204914}
+2022/05/12 03:16:28.238	info	tls.obtain	lock acquired	{"identifier": "ess.edr.cyradar.com"}
+2022/05/12 03:16:28.239	warn	tls.issuance.internal	cert lifetime would exceed issuer NotAfter, clamping lifetime	{"orig_lifetime": 43200, "lifetime": -84283.239819, "not_after": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.257	info	tls	finished cleaning storage units
+2022/05/12 03:16:28.257	info	tls.obtain	lock acquired	{"identifier": "authenticator.cyradar.com"}
+2022/05/12 03:16:28.239	info	tls.renew	renewing certificate	{"identifier": "log.collector.cyradar.com", "remaining": -219140.239866}
+2022/05/12 03:16:28.240	warn	tls.issuance.internal	cert lifetime would exceed issuer NotAfter, clamping lifetime	{"orig_lifetime": 43200, "lifetime": -84283.240738, "not_after": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.258	info	tls.renew	certificate renewed successfully	{"identifier": "asset.edr.cyradar.com"}
+2022/05/12 03:16:28.258	info	tls.renew	certificate renewed successfully	{"identifier": "license.edr.cyradar.com"}
+2022/05/12 03:16:28.258	warn	tls.issuance.internal	cert lifetime would exceed issuer NotAfter, clamping lifetime	{"orig_lifetime": 43200, "lifetime": -84283.258777, "not_after": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.258	warn	tls.issuance.internal	cert lifetime would exceed issuer NotAfter, clamping lifetime	{"orig_lifetime": 43200, "lifetime": -84283.258798, "not_after": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.258	info	tls.renew	releasing lock	{"identifier": "license.edr.cyradar.com"}
+2022/05/12 03:16:28.258	info	tls.renew	releasing lock	{"identifier": "asset.edr.cyradar.com"}
+2022/05/12 03:16:28.259	info	tls	reloading managed certificate	{"identifiers": ["asset.edr.cyradar.com"]}
+2022/05/12 03:16:28.259	info	tls	reloading managed certificate	{"identifiers": ["license.edr.cyradar.com"]}
+2022/05/12 03:16:28.259	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [license.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["license.edr.cyradar.com"]}
+2022/05/12 03:16:28.259	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [asset.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["asset.edr.cyradar.com"]}
+2022/05/12 03:16:28.259	info	tls.cache	replaced certificate in cache	{"subjects": ["license.edr.cyradar.com"], "new_expiration": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.259	info	tls.cache	replaced certificate in cache	{"subjects": ["asset.edr.cyradar.com"], "new_expiration": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.259	info	tls.obtain	certificate obtained successfully	{"identifier": "ess.edr.cyradar.com"}
+2022/05/12 03:16:28.259	info	tls.obtain	releasing lock	{"identifier": "ess.edr.cyradar.com"}
+2022/05/12 03:16:28.260	info	tls.obtain	certificate obtained successfully	{"identifier": "authenticator.cyradar.com"}
+2022/05/12 03:16:28.260	info	tls.obtain	releasing lock	{"identifier": "authenticator.cyradar.com"}
+2022/05/12 03:16:28.260	info	tls.renew	certificate renewed successfully	{"identifier": "log.collector.cyradar.com"}
+2022/05/12 03:16:28.260	info	tls.renew	releasing lock	{"identifier": "log.collector.cyradar.com"}
+2022/05/12 03:16:28.260	info	tls	reloading managed certificate	{"identifiers": ["log.collector.cyradar.com"]}
+2022/05/12 03:16:28.260	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [authenticator.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["authenticator.cyradar.com"]}
+2022/05/12 03:16:28.261	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.collector.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.collector.cyradar.com"]}
+2022/05/12 03:16:28.261	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [ess.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["ess.edr.cyradar.com"]}
+2022/05/12 03:16:28.261	info	tls.cache	replaced certificate in cache	{"subjects": ["log.collector.cyradar.com"], "new_expiration": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.262	info	tls.renew	certificate renewed successfully	{"identifier": "log.edr.cyradar.com"}
+2022/05/12 03:16:28.262	info	tls.renew	releasing lock	{"identifier": "log.edr.cyradar.com"}
+2022/05/12 03:16:28.262	info	tls	reloading managed certificate	{"identifiers": ["log.edr.cyradar.com"]}
+2022/05/12 03:16:28.262	warn	tls	stapling OCSP	{"error": "no OCSP stapling for [log.edr.cyradar.com]: no OCSP server specified in certificate", "identifiers": ["log.edr.cyradar.com"]}
+2022/05/12 03:16:28.262	info	tls.cache	replaced certificate in cache	{"subjects": ["log.edr.cyradar.com"], "new_expiration": "2022/05/11 03:51:45.000"}
+2022/05/12 03:16:28.447	info	pki.ca.local	root certificate is already trusted by system	{"path": "storage:pki/authorities/local/root.crt"}
+2022/05/12 03:16:28.447	info	pki	intermediate expires soon; renewing	{"ca": "local", "time_remaining": -84283.447553}
+2022/05/12 03:16:28.449	info	pki	renewed intermediate	{"ca": "local", "new_expiration": "2022/05/19 03:16:28.000"}
+2022/05/12 03:16:28.450	info	autosaved config (load with --resume flag)	{"file": "/Users/minhduong/Library/Application Support/Caddy/autosave.json"}
+2022/05/12 03:16:28.450	info	serving initial configuration
